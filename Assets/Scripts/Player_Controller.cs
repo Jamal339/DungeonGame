@@ -61,4 +61,14 @@ public class Player_Controller : MonoBehaviour
 
         anim.SetInteger("state", (int)state);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnterRoomTrigger"))
+        {
+          DeleteShadow deleteShadow = other.GetComponent<DeleteShadow>();
+            deleteShadow.deleteShadow();
+            Debug.Log("Entered Room");
+        }
+    }
 }

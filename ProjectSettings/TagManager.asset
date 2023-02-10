@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rooms
+  - SpawnPoint
+  - EntryCenter
+  - EnterRoomTrigger
+  - RoomCenter
+  - Object
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -46,4 +53,7 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 3679676521
+    locked: 0
+  - name: Shadow
+    uniqueID: 2831898181
     locked: 0
